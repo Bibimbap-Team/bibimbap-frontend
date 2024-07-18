@@ -1,7 +1,8 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Navigation from '@/components/Navigation';
-import { Container, Typography } from '@mui/material';
+import Index from '@/components/Index';
+import { Container } from '@mui/material';
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
       <main>
         <Header />
         <Navigation title='Index' />
-        <Typography variant='body1'>Welcome to the home page!</Typography>
+        <Index />
         <Footer />
       </main>
     </Container>
