@@ -7,12 +7,12 @@ import { Container } from '@mui/material';
 export default function Home() {
   return (
     <Container maxWidth='xl' className='my-2'>
+      <Header />
+      <Navigation title='Index Page' />
       <main>
-        <Header />
-        <Navigation title='Index Page' />
         <Index />
-        <Footer />
       </main>
+      <Footer />
     </Container>
   );
 }
