@@ -9,7 +9,7 @@ export default function Home() {
     <Container maxWidth='xl' className='my-2'>
       <main>
         <Header />
-        <Navigation title='Index' />
+        <Navigation title='Index Page' />
         <Index />
         <Footer />
       </main>
