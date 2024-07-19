@@ -10,7 +10,7 @@ export default function Navigation({ title }: NavigationProps) {
     <Box className='flex justify-between border border-black rounded-md py-2 px-4 mb-8 bg-primary'>
       <Box>{title}</Box>
       <Box className='flex gap-2'>
-        Index
+        <CustomLink href='/'>Index</CustomLink>
         <CustomLink href='/login'>Login</CustomLink>
         <CustomLink href='/register'>Register</CustomLink>
       </Box>
