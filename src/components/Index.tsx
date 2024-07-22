@@ -18,12 +18,12 @@ export default function Index() {
         </div>
       </div>
       <div className='col-span-3 grid grid-rows-2 gap-4'>
-        <div className='border border-black rounded-md py-2 px-4 bg-primary w-full flex flex-col gap-2'>
+        <div className='border border-primary rounded-md py-2 px-4 bg-primary w-full flex flex-col gap-2'>
           <p>Registered users: 12345</p>
           <p>Problems total: 12345</p>
           <p>Invokers waiting: 34</p>
         </div>
-        <div className='border border-black rounded-md py-2 px-4 bg-primary w-full flex flex-col gap-2'>
+        <div className='border border-primary rounded-md py-2 px-4 bg-primary w-full flex flex-col gap-2'>
           <Changelog date='15 Jun 2024' content='Added a new feature' />
           <Changelog date='12 Jul 2014' content='Fixed a bug' />
           <Changelog date='27 Jun 2013' content='Initial release of the app' />

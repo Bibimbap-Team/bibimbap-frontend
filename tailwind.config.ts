@@ -15,7 +15,10 @@ const config: Config = {
       },
       backgroundColor: {
         "primary": "var(--global-bg-color)"
-      }
+      },
+      borderColor: {
+        "primary": "var(--global-border-color)"
+      },
     },
   },
   plugins: [],
