@@ -19,7 +19,8 @@
     "next": "14.2.4",
     "normalize.css": "^8.0.1",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@testing-library/dom": "^10.3.2",
