@@ -17,6 +17,7 @@ export default function StatementNavbar({
                 label={lang.label}
                 value={lang.value}
                 href={'?language=' + lang.value}
+                key={lang.value}
               />
             ))}
           </Tabs>

@@ -41,7 +41,12 @@ export default function Problem() {
         />
       )}
       {existedLanguageList.find((lang) => lang.value === language) && (
-        <EditStatement language={language} />
+        <EditStatement
+          language={language}
+          languageName={
+            existedLanguageList.find((lang) => lang.value === language)?.label || ''
+          }
+        />
       )}
     </Stack>
   );
