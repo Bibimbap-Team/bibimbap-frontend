@@ -33,8 +33,8 @@ export default function EditStatement({
             </ButtonGroup>
           </Stack>
           <Typography variant='caption' px={2}>
-            It is recommended to use simple TeX, "Preview in HTML" feature supports only
-            subset of TeX markup
+            It is recommended to use simple TeX, &ldquo;Preview in HTML&rdquo; feature
+            supports only subset of TeX markup
           </Typography>
         </Stack>
         <TextField id='prob_name' label='Name' fullWidth />
