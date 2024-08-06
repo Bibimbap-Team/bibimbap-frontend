@@ -1,9 +1,10 @@
-import { Button, Paper, Stack, TextField, Autocomplete, Link } from '@mui/material';
+import { Button, Paper, Stack, TextField } from '@mui/material';
 
 // As same as Polygon, the page link is same for creating new language and editing existed language
 // It can be divided into two pages if needed
 
 export default function EditStatement({ language }: { language: string }) {
+  // have to fetch the statement and tutorial from the server by the language
   return (
     <Paper>
       <Stack direction='column' px={4} py={2} gap={2}>
