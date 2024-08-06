@@ -34,13 +34,15 @@ export default function Problem() {
   return (
     <Stack mt={2} gap={4}>
       <StatementNavbar existedLanguageList={existedLanguageList} language={language} />
-      {!language && (
+      {!existedLanguageList.find((lang) => lang.value === language) && (
         <NewLanguage
           languageList={languageList}
           existedLanguageList={existedLanguageList}
         />
       )}
-      {language && <EditStatement language={language} />}
+      {existedLanguageList.find((lang) => lang.value === language) && (
+        <EditStatement language={language} />
+      )}
     </Stack>
   );
 }
