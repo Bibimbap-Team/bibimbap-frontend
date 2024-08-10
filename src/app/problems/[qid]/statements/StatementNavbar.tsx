@@ -10,7 +10,15 @@ export default function StatementNavbar({
   return (
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Stack direction='row' gap={2} p={2} justifyContent='space-between'>
+        <Stack
+          gap={2}
+          p={2}
+          justifyContent='space-between'
+          sx={{
+            xs: { flexDirection: 'column' },
+            md: { flexDirection: 'row' },
+          }}
+        >
           <Tabs value={language}>
             {existedLanguageList.map((lang) => (
               <Tab
@@ -21,7 +29,10 @@ export default function StatementNavbar({
               />
             ))}
           </Tabs>
-          <ButtonGroup variant='text'>
+          <ButtonGroup
+            variant='text'
+            sx={{ flexWrap: 'wrap', justifyContent: 'flex-end' }}
+          >
             <Button>Edit With Preview</Button>
             <Button>Review</Button>
             <Button>Delete Current</Button>

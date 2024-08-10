@@ -22,11 +22,19 @@ export default function EditStatement({
     <Paper>
       <Stack direction='column' px={4} py={2} gap={2}>
         <Stack direction='column'>
-          <Stack direction='row' gap={2} px={2} justifyContent='space-between'>
+          <Stack
+            gap={2}
+            px={2}
+            justifyContent='space-between'
+            sx={{
+              xs: { flexDirection: 'column' },
+              md: { flexDirection: 'row' },
+            }}
+          >
             <Typography variant='h6'>
               Edit {languageName}({language}) Statement
             </Typography>
-            <ButtonGroup variant='text'>
+            <ButtonGroup variant='text' sx={{ justifyContent: 'flex-end' }}>
               <Button>In LaTex</Button>
               <Button>In HTML</Button>
               <Button>In PDF</Button>
