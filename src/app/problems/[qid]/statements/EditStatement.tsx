@@ -23,13 +23,10 @@ export default function EditStatement({
       <Stack direction='column' px={4} py={2} gap={2}>
         <Stack direction='column'>
           <Stack
+            direction={{ sm: 'column', md: 'row' }}
             gap={2}
             px={2}
             justifyContent='space-between'
-            sx={{
-              xs: { flexDirection: 'column' },
-              md: { flexDirection: 'row' },
-            }}
           >
             <Typography variant='h6'>
               Edit {languageName}({language}) Statement

@@ -11,13 +11,10 @@ export default function StatementNavbar({
     <Box sx={{ width: '100%' }}>
       <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
         <Stack
+          direction={{ sm: 'column', md: 'row' }}
           gap={2}
           p={2}
           justifyContent='space-between'
-          sx={{
-            xs: { flexDirection: 'column' },
-            md: { flexDirection: 'row' },
-          }}
         >
           <Tabs value={language}>
             {existedLanguageList.map((lang) => (
