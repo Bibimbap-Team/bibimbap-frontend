@@ -1,7 +1,6 @@
 'use client';
 
 import { Button, Paper, Stack, TextField, Autocomplete, Link } from '@mui/material';
-
 import { useState } from 'react';
 
 // As same as Polygon, the page link is same for creating new language and editing existed language

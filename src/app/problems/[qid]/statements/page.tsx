@@ -1,10 +1,9 @@
 'use client';
 
 import { Stack } from '@mui/material';
-
 import { useSearchParams } from 'next/navigation';
-
 import { useState } from 'react';
+
 import NewLanguage from './NewLanguage';
 import EditStatement from './EditStatement';
 import StatementNavbar from './StatementNavbar';
